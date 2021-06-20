@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.Controller"
+            prefHeight="600.0" prefWidth="750.0">
+
+
+    <children>
+        <ListView fx:id="networkListView" layoutX="15" layoutY="14" prefHeight="200" prefWidth="462">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </items>
+        </ListView>
+        <Button fx:id="pickButton" onAction="#networkPickAction" layoutX="395" layoutY="220"
+                prefHeight="29" prefWidth="82" text="PICK"></Button>
+        <TextArea fx:id="textArea" editable="false" layoutX="15" layoutY="260" prefWidth="462" prefHeight="325"></TextArea>
+        <Label layoutX="486" layoutY="14" text="My IP">
+            <font>
+                <Font size="15"></Font>
+            </font>
+        </Label>
+        <Label layoutX="486" layoutY="44" text="Sender IP">
+            <font>
+                <Font size="15"></Font>
+            </font>
+        </Label>
+        <Label layoutX="486" layoutY="75" text="Target IP">
+            <font>
+                <Font size="15"></Font>
+            </font>
+        </Label>
+        <TextField fx:id="myIP" layoutX="562" layoutY="12" prefHeight="23" prefWidth="175"></TextField>
+        <TextField fx:id="senderIP" layoutX="562" layoutY="44" prefHeight="23" prefWidth="175"></TextField>
+        <TextField fx:id="targetIP" layoutX="562" layoutY="76" prefHeight="23" prefWidth="175"></TextField>
+        <Button fx:id = "getMACButton" onAction="#getMACAction" layoutX="654" layoutY="112" prefHeight="29" prefWidth="82" text="Start">
+        </Button>
+    </children>
+
+</AnchorPane>

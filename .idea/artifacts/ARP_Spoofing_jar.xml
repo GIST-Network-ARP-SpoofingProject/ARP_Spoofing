@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ARP_Spoofing:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ARP_Spoofing_jar</output-path>
+    <root id="archive" name="ARP_Spoofing.jar">
+      <element id="module-output" name="ARP_Spoofing" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../JAVA_Library/jnetpcap-1.4.r1425-1.win64/jnetpcap-1.4.r1425/jnetpcap.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
